@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love, Back To Me</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="rain-layer"></div>
+    <div class="grain-layer"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Love, Back To Me home">
+        <span class="brand-mark"></span>
+        Love, Back To Me
+      </a>
+      <div class="header-actions">
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#concept" data-i18n="navConcept">Concept</a>
+          <a href="#tracks" data-i18n="navTracks">Tracks</a>
+          <a href="#media" data-i18n="navMedia">Media</a>
+          <a href="#progress" data-i18n="navProgress">Progress</a>
+          <a href="#notes" data-i18n="navNotes">Notes</a>
+        </nav>
+        <div class="language-switch" aria-label="Language switch">
+          <button class="language-button is-active" type="button" data-lang="en">EN</button>
+          <button class="language-button" type="button" data-lang="th">TH</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero section fade-in">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Emotional Multimedia Thesis Archive</p>
+          <h1>Love, Back To Me</h1>
+          <p class="subtitle" data-i18n="heroSubtitle">An emotional multimedia thesis project by Pongsant Chintanapakdee</p>
+          <p class="hero-description" data-i18n="heroDescription">
+            A personal archive for music, visuals, interaction, animation, sound-reactive design, and a peaceful game
+            environment. The project follows love through memory, regret, nostalgia, emotional growth, and the quiet
+            return to self-understanding.
+          </p>
+          <div id="keyword-row" class="keyword-row" aria-label="Mood keywords">
+            <span>Dreamy</span>
+            <span>Nostalgic</span>
+            <span>Cinematic</span>
+            <span>Late-night</span>
+            <span>Reflective</span>
+          </div>
+        </div>
+
+        <aside class="overview-panel" aria-label="Overall project progress">
+          <div class="panel-header">
+            <p data-i18n="overallProgress">Overall Progress</p>
+            <strong id="overall-percent">0%</strong>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <span id="overall-progress"></span>
+          </div>
+          <div class="dashboard-stats">
+            <div>
+              <strong id="stat-tracks">6</strong>
+              <span data-i18n="statTracks">Tracks</span>
+            </div>
+            <div>
+              <strong id="stat-media">8</strong>
+              <span data-i18n="statMedia">Media pieces</span>
+            </div>
+            <div>
+              <strong id="stat-complete">0</strong>
+              <span data-i18n="statFinished">Finished</span>
+            </div>
+          </div>
+          <div class="media-placeholder hero-placeholder">
+            <span data-i18n="heroPlaceholder">Hero image / city lights / rain video placeholder</span>
+          </div>
+        </aside>
+      </section>
+
+      <section id="concept" class="section fade-in">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="conceptEyebrow">Concept</p>
+          <h2 data-i18n="conceptTitle">Love as a cycle of returning</h2>
+        </div>
+        <div id="concept-grid" class="concept-grid"></div>
+      </section>
+
+      <section id="tracks" class="section fade-in">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow" data-i18n="tracksEyebrow">Tracklist</p>
+            <h2 data-i18n="tracksTitle">Song concepts</h2>
+          </div>
+          <p class="section-note" data-i18n="tracksNote">Six songs, six emotional rooms, one return.</p>
+        </div>
+        <div id="track-grid" class="track-grid"></div>
+      </section>
+
+      <section id="media" class="section fade-in">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="mediaEyebrow">Media Plan</p>
+          <h2 data-i18n="mediaTitle">Outputs and placeholders</h2>
+        </div>
+        <div id="media-grid" class="media-grid"></div>
+      </section>
+
+      <section id="progress" class="section fade-in">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow" data-i18n="progressEyebrow">Progress Tracker</p>
+            <h2 data-i18n="progressTitle">Checklist archive</h2>
+          </div>
+          <button id="reset-checklist" class="ghost-button" type="button" data-i18n="resetChecks">Reset checks</button>
+        </div>
+        <div id="checklist-grid" class="checklist-grid"></div>
+      </section>
+
+      <section id="references" class="section fade-in">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="referencesEyebrow">Inspiration</p>
+          <h2 data-i18n="referencesTitle">References</h2>
+        </div>
+        <div class="reference-grid">
+          <article class="reference-column">
+            <h3 data-i18n="filmsTitle">Films / Series</h3>
+            <ul id="film-list"></ul>
+          </article>
+          <article class="reference-column">
+            <h3 data-i18n="gamesTitle">Games</h3>
+            <ul id="game-list"></ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="notes" class="section fade-in notes-section">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow" data-i18n="notesEyebrow">Notes</p>
+            <h2 data-i18n="notesTitle">Updates for later</h2>
+          </div>
+          <span class="save-state" id="save-state" data-i18n="savedLocally">Saved locally</span>
+        </div>
+        <label class="notes-label" for="notes-area" data-i18n="notesLabel">Project notes</label>
+        <textarea
+          id="notes-area"
+          spellcheck="true"
+          placeholder="Write thesis updates, production notes, emotional fragments, deadlines, references, or song ideas here..."
+        ></textarea>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footerText">Love, Back To Me / emotional archive / thesis dashboard</p>
+      <a href="#home" data-i18n="backToTop">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
